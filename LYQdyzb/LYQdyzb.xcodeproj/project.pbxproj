@@ -54,6 +54,7 @@
 		155D934F1DC89E2F00D3A72B /* LYQdyzb */ = {
 			isa = PBXGroup;
 			children = (
+				1580A82E1DC9C57400415046 /* Classes */,
 				155D93501DC89E2F00D3A72B /* AppDelegate.swift */,
 				155D93521DC89E2F00D3A72B /* ViewController.swift */,
 				155D93541DC89E2F00D3A72B /* Main.storyboard */,
@@ -62,6 +63,109 @@
 				155D935C1DC89E2F00D3A72B /* Info.plist */,
 			);
 			path = LYQdyzb;
+			sourceTree = "<group>";
+		};
+		1580A82E1DC9C57400415046 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1580A82F1DC9C57400415046 /* Home */,
+				1580A8341DC9C57400415046 /* Main */,
+				1580A8391DC9C57400415046 /* Room */,
+				1580A83A1DC9C57400415046 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1580A82F1DC9C57400415046 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1580A8301DC9C57400415046 /* Controller */,
+				1580A8311DC9C57400415046 /* Model */,
+				1580A8321DC9C57400415046 /* View */,
+				1580A8331DC9C57400415046 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1580A8301DC9C57400415046 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1580A8311DC9C57400415046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1580A8321DC9C57400415046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1580A8331DC9C57400415046 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1580A8341DC9C57400415046 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1580A8351DC9C57400415046 /* Controller */,
+				1580A8361DC9C57400415046 /* Model */,
+				1580A8371DC9C57400415046 /* View */,
+				1580A8381DC9C57400415046 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1580A8351DC9C57400415046 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1580A8361DC9C57400415046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1580A8371DC9C57400415046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1580A8381DC9C57400415046 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1580A8391DC9C57400415046 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		1580A83A1DC9C57400415046 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 239YVJ9C8H;
 				INFOPLIST_FILE = LYQdyzb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lyqdyzb.LYQdyzb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +380,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 239YVJ9C8H;
 				INFOPLIST_FILE = LYQdyzb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lyqdyzb.LYQdyzb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +410,7 @@
 				155D93611DC89E2F00D3A72B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
