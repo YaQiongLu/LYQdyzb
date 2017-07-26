@@ -12,15 +12,35 @@ private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
 
-    //MARK:懒加载属性
+    //MARK:懒加载属性 pageTitleView
     fileprivate lazy var pageTitleView : PageTitleView = {
     
         let frame = CGRect(x: 0, y: CGFloat(kStatusBarH + kNavigationBarH), width: CGFloat(kScreenW), height: CGFloat(kTitleViewH))
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: frame, titles: titles)
-//        titleView.backgroundColor = UIColor.red
+        titleView.delegate = self as PageTitleViewDelegate
         return titleView
         
+    }()
+    
+    //MARK:懒加载pageContentView
+    fileprivate lazy var pageContentView : PageContentView = {[weak self] in
+    
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+        let frame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        
+        //要添加的子控制器
+        var childVcs = [UIViewController]()
+        for _ in 0..<4{
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            childVcs.append(vc)
+        }
+        
+        let contentView = PageContentView(frame: frame, childVcs: childVcs, parentViewController:self)
+       contentView.delegate = self as! PageContentViewDelegate
+        
+        return contentView
     }()
     
     override func viewDidLoad() {
@@ -39,8 +59,16 @@ extension HomeViewController{
     
         //不要调整UIScrollView的内边距
         automaticallyAdjustsScrollViewInsets = false;
+        
+        //设置导航栏
         setNav()
+        
+        //添加pageTitleView
         view.addSubview(pageTitleView)
+        
+        //添加pageContentView
+        view.addSubview(pageContentView)
+//        pageContentView.backgroundColor = UIColor.brown
     }
     
     //设置导航栏
@@ -87,4 +115,24 @@ extension HomeViewController{
     }
     
     
+}
+
+//MARK: - 遵守协议PageTitleViewDelegate
+extension HomeViewController: PageTitleViewDelegate{
+
+    func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
+        
+        pageContentView.setCurrentIndex(currentIndex: index)
+        
+    }
+}
+
+//MARK: - 遵守协议PageContentViewDelegate
+extension HomeViewController : PageContentViewDelegate{
+
+    func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        
+        //调用PageTitleView
+        pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
 }

@@ -23,7 +23,10 @@ class MainViewController: UITabBarController {
     
     private func addChildVc(storyName : String) {
     
+        //1.通过storyBoard获取控制器
         let chileVc = UIStoryboard(name: storyName, bundle: nil).instantiateInitialViewController()!
+        
+        //2.将chileVc作为子控制器
         addChildViewController(chileVc)
         
     }
