@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		155C19A71F32C55900D07F1C /* RecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C19A61F32C55900D07F1C /* RecommendVC.swift */; };
+		155C19AA1F3317CB00D07F1C /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C19A81F3317CB00D07F1C /* CollectionHeaderView.swift */; };
+		155C19AB1F3317CB00D07F1C /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155C19A91F3317CB00D07F1C /* CollectionHeaderView.xib */; };
+		155C19AE1F331A6A00D07F1C /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C19AC1F331A6A00D07F1C /* CollectionNormalCell.swift */; };
+		155C19AF1F331A6A00D07F1C /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155C19AD1F331A6A00D07F1C /* CollectionNormalCell.xib */; };
+		155C19B21F331FBB00D07F1C /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C19B01F331FBB00D07F1C /* CollectionPrettyCell.swift */; };
+		155C19B31F331FBB00D07F1C /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155C19B11F331FBB00D07F1C /* CollectionPrettyCell.xib */; };
 		155D93511DC89E2F00D3A72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D93501DC89E2F00D3A72B /* AppDelegate.swift */; };
 		155D93531DC89E2F00D3A72B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D93521DC89E2F00D3A72B /* ViewController.swift */; };
 		155D93561DC89E2F00D3A72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155D93541DC89E2F00D3A72B /* Main.storyboard */; };
@@ -26,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		155C19A61F32C55900D07F1C /* RecommendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendVC.swift; sourceTree = "<group>"; };
+		155C19A81F3317CB00D07F1C /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionHeaderView.swift; path = LYQdyzb/Classes/Home/Controller/CollectionHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		155C19A91F3317CB00D07F1C /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionHeaderView.xib; path = LYQdyzb/Classes/Home/Controller/CollectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		155C19AC1F331A6A00D07F1C /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		155C19AD1F331A6A00D07F1C /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		155C19B01F331FBB00D07F1C /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		155C19B11F331FBB00D07F1C /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		155D934D1DC89E2F00D3A72B /* LYQdyzb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYQdyzb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		155D93501DC89E2F00D3A72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		155D93521DC89E2F00D3A72B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +138,7 @@
 			children = (
 				1583F0C21DD02E0700859ED2 /* Home.storyboard */,
 				1577E8B81DD032EA0094F74C /* HomeViewController.swift */,
+				155C19A61F32C55900D07F1C /* RecommendVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -138,6 +153,8 @@
 		1580A8321DC9C57400415046 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				155C19A81F3317CB00D07F1C /* CollectionHeaderView.swift */,
+				155C19A91F3317CB00D07F1C /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +198,10 @@
 			children = (
 				1577E8BD1DD05FAA0094F74C /* PageTitleView.swift */,
 				15BADBC71F04CF5E00A8B4DA /* PageContentView.swift */,
+				155C19AC1F331A6A00D07F1C /* CollectionNormalCell.swift */,
+				155C19AD1F331A6A00D07F1C /* CollectionNormalCell.xib */,
+				155C19B01F331FBB00D07F1C /* CollectionPrettyCell.swift */,
+				155C19B11F331FBB00D07F1C /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,10 +403,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				155D935B1DC89E2F00D3A72B /* LaunchScreen.storyboard in Resources */,
+				155C19AB1F3317CB00D07F1C /* CollectionHeaderView.xib in Resources */,
+				155C19AF1F331A6A00D07F1C /* CollectionNormalCell.xib in Resources */,
 				155D93581DC89E2F00D3A72B /* Assets.xcassets in Resources */,
 				155D93561DC89E2F00D3A72B /* Main.storyboard in Resources */,
 				1583F0C61DD02E4800859ED2 /* Live.storyboard in Resources */,
 				1583F0C41DD02E0700859ED2 /* Home.storyboard in Resources */,
+				155C19B31F331FBB00D07F1C /* CollectionPrettyCell.xib in Resources */,
 				1583F0CB1DD02E8400859ED2 /* Profile.storyboard in Resources */,
 				1583F0C91DD02E6C00859ED2 /* Follow.storyboard in Resources */,
 			);
@@ -399,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1577E8BE1DD05FAA0094F74C /* PageTitleView.swift in Sources */,
+				155C19AA1F3317CB00D07F1C /* CollectionHeaderView.swift in Sources */,
+				155C19A71F32C55900D07F1C /* RecommendVC.swift in Sources */,
 				1577E8B71DD030090094F74C /* MainViewController.swift in Sources */,
 				155D93531DC89E2F00D3A72B /* ViewController.swift in Sources */,
 				15BADBC81F04CF5E00A8B4DA /* PageContentView.swift in Sources */,
@@ -406,6 +432,8 @@
 				155D93511DC89E2F00D3A72B /* AppDelegate.swift in Sources */,
 				1577E8BC1DD059240094F74C /* UIBarButton-Extension.swift in Sources */,
 				1577E8B91DD032EA0094F74C /* HomeViewController.swift in Sources */,
+				155C19B21F331FBB00D07F1C /* CollectionPrettyCell.swift in Sources */,
+				155C19AE1F331A6A00D07F1C /* CollectionNormalCell.swift in Sources */,
 				1577E8C01DD0604F0094F74C /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
