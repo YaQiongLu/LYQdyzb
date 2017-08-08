@@ -50,8 +50,11 @@ class RecommendVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //1.设置UI
         setupUI()
         
+        //2.发送网络请求
+        loadData()
     }
 
 }
@@ -63,6 +66,15 @@ extension RecommendVC{
         
         //1.将collectionView添加到控制器view中
         view.addSubview(collectionView)
+    }
+}
+
+
+//MARK: -请求网络数据
+extension RecommendVC{
+
+    fileprivate func loadData() {
+        
     }
 }
 
