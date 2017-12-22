@@ -22,6 +22,9 @@ fileprivate let kHeaderViewId = "kHeaderViewId"
 class RecommendVC: UIViewController {
     
     //MARK: - 懒加载属性
+    
+    lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+    
     lazy var collectionView : UICollectionView = {
 
         //1.创建布局
@@ -75,6 +78,7 @@ extension RecommendVC{
 
     fileprivate func loadData() {
         
+        recommendVM.requestData()
     }
 }
 
